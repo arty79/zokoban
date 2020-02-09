@@ -1,4 +1,4 @@
-package main.kotlin.ru
+package code.ru
 
 object Application {
     var KOTLIN = "kotlin"

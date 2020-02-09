@@ -1,4 +1,4 @@
-package main.kotlin.ru
+package code.ru
 
 class KotlinService {
 
