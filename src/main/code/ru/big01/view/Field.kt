@@ -11,13 +11,14 @@ import code.ru.big01.model.Direction
 /**
  * Created by arty on 27.01.2016.
  */
-class Field(view: View, private var eventListener: EventListener) : JPanel() {
-    private val view = view
-
+class Field(view: View, eventListener: EventListener) : JPanel() {
+    private var view = view
+    var eventListener = eventListener
     override fun paint(g: Graphics) {
         g.color = Color.BLACK
         g.fillRect(0, 0, view.getWidth(), view.getHeight())
-        for (it in view.gameObjects.all) {
+        //println()
+        for (it in view.getGameObjects().all) {
             it.draw(g)
         }
     }

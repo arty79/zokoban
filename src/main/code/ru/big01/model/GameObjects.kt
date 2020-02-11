@@ -6,10 +6,10 @@ import java.util.*
  * Created by arty on 28.01.2016.
  */
 class GameObjects(walls: Set<Wall>, boxes: Set<Box>, homes: Set<Home>, player: Player) {
-    private val walls: Set<Wall> = walls
-    private val boxes: Set<Box> = boxes
-    private val homes: Set<Home> = homes
-    private val player: Player = player
+    private var walls: Set<Wall> = walls
+    private var boxes: Set<Box> = boxes
+    private var homes: Set<Home> = homes
+    private var player: Player = player
     val all: Set<GameObject>
         get() {
             val allObj: MutableSet<GameObject> = HashSet<GameObject>()

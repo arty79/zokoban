@@ -9,10 +9,15 @@ import code.ru.big01.view.View
 /**
  * Created by arty on 27.01.2016.
  */
-object Controller : EventListener {
-    private val model: Model = Model(this)
-    private val view: View = View(this)
-    val gameObjects = model.gameObjects
+class Controller : EventListener {
+    private var model: Model = Model(this)
+    private var view: View = View(this)
+
+    fun init() {
+        view.init()
+        model.restart()
+        model.eventListener = this
+    }
     override fun move(direction: Direction) {
         model.move(direction)
         view.update()
@@ -32,9 +37,7 @@ object Controller : EventListener {
         view.completed(level)
     }
 
-    @JvmStatic
-    fun main(args: Array<String>) {
-        view.init()
-        model.restart()
+    fun getGameObjects(): GameObjects {
+        return model.gameObjects
     }
 }

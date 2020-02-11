@@ -1,16 +1,14 @@
 package code.ru.big01.model
 
-import code.ru.big01.controller.Controller
 import code.ru.big01.controller.EventListener
 
 
 /**
  * Created by arty on 27.01.2016.
  */
-class Model(controller: Controller) {
-    private var eventListener: Controller = controller
+class Model(var eventListener: EventListener) {
     private var currentLevel = 1
-    private val levelLoader: LevelLoader = getLevelLoader()
+    private var levelLoader: LevelLoader = getLevelLoader()
     var gameObjects: GameObjects = levelLoader.getLevel(currentLevel)
     private fun getLevelLoader(): LevelLoader {
         val path = javaClass.classLoader.getResource("res/levels.txt").path

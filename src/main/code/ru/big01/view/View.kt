@@ -1,13 +1,13 @@
 package code.ru.big01.view
 
+import code.ru.big01.controller.Controller
+import code.ru.big01.model.GameObjects
 import javax.swing.JFrame
 import javax.swing.JOptionPane
 import javax.swing.WindowConstants
-import code.ru.big01.controller.Controller
 
 class View(controller: Controller) : JFrame() {
     private val controller: Controller = controller
-    val gameObjects = controller.gameObjects
     private var field = Field(this, controller)
 
 
@@ -24,6 +24,9 @@ class View(controller: Controller) : JFrame() {
         field.repaint()
     }
 
+    fun getGameObjects(): GameObjects {
+        return controller.getGameObjects()
+    }
 
 
     fun completed(level: Int) {
