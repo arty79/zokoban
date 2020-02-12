@@ -6,10 +6,8 @@ import javax.swing.JFrame
 import javax.swing.JOptionPane
 import javax.swing.WindowConstants
 
-class View(controller: Controller) : JFrame() {
-    private val controller: Controller = controller
+class View(val controller: Controller) : JFrame() {
     private var field = Field(this, controller)
-
 
     fun init() {
         add(field)
@@ -27,7 +25,6 @@ class View(controller: Controller) : JFrame() {
     fun getGameObjects(): GameObjects {
         return controller.getGameObjects()
     }
-
 
     fun completed(level: Int) {
         update()

@@ -1,5 +1,8 @@
 package code.ru.model
 
+import code.ru.model.Direction.*
+import code.ru.model.Model.Companion.FIELD_SELL_SIZE
+
 /**
  * Created by arty on 28.01.2016.
  */
@@ -8,10 +11,10 @@ abstract class CollisionObject(x: Int, y: Int) : GameObject(x, y) {
         var newX: Int = this.x
         var newY: Int = this.y
         when (direction) {
-            Direction.UP -> newY -= Model.FIELD_SELL_SIZE
-            Direction.DOWN -> newY += Model.FIELD_SELL_SIZE
-            Direction.LEFT -> newX -= Model.FIELD_SELL_SIZE
-            Direction.RIGHT -> newX += Model.FIELD_SELL_SIZE
+            UP -> newY -= FIELD_SELL_SIZE
+            DOWN -> newY += FIELD_SELL_SIZE
+            LEFT -> newX -= FIELD_SELL_SIZE
+            RIGHT -> newX += FIELD_SELL_SIZE
         }
         return newX == gameObject.x && newY == gameObject.y
     }
