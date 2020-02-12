@@ -1,6 +1,6 @@
-package code.ru.big01.controller;
+package code.ru.controller;
 
-import code.ru.big01.model.Direction
+import code.ru.model.Direction
 
 
 /**

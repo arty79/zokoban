@@ -1,9 +1,9 @@
-package code.ru.big01.controller
+package code.ru.controller
 
-import code.ru.big01.model.Direction
-import code.ru.big01.model.GameObjects
-import code.ru.big01.model.Model
-import code.ru.big01.view.View
+import code.ru.model.Direction
+import code.ru.model.GameObjects
+import code.ru.model.Model
+import code.ru.view.View
 
 
 /**

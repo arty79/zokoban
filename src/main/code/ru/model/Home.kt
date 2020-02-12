@@ -1,4 +1,4 @@
-package code.ru.big01.model
+package code.ru.model
 
 import java.awt.Color
 import java.awt.Graphics

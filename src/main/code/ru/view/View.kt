@@ -1,7 +1,7 @@
-package code.ru.big01.view
+package code.ru.view
 
-import code.ru.big01.controller.Controller
-import code.ru.big01.model.GameObjects
+import code.ru.controller.Controller
+import code.ru.model.GameObjects
 import javax.swing.JFrame
 import javax.swing.JOptionPane
 import javax.swing.WindowConstants

@@ -1,4 +1,4 @@
-package code.ru.big01.model
+package code.ru.model
 
 /**
  * Created by arty on 28.01.2016.

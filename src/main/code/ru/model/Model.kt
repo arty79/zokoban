@@ -1,6 +1,6 @@
-package code.ru.big01.model
+package code.ru.model
 
-import code.ru.big01.controller.EventListener
+import code.ru.controller.EventListener
 
 
 /**

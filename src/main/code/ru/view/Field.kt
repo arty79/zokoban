@@ -1,12 +1,12 @@
-package code.ru.big01.view
+package code.ru.view
 
 import java.awt.Color
 import java.awt.Graphics
 import java.awt.event.KeyAdapter
 import java.awt.event.KeyEvent
 import javax.swing.JPanel
-import code.ru.big01.controller.EventListener
-import code.ru.big01.model.Direction
+import code.ru.controller.EventListener
+import code.ru.model.Direction
 
 /**
  * Created by arty on 27.01.2016.
