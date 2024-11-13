@@ -15,6 +15,7 @@ abstract class CollisionObject(x: Int, y: Int) : GameObject(x, y) {
             DOWN -> newY += FIELD_SELL_SIZE
             LEFT -> newX -= FIELD_SELL_SIZE
             RIGHT -> newX += FIELD_SELL_SIZE
+            else -> return false
         }
         return newX == gameObject.x && newY == gameObject.y
     }
